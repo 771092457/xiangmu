@@ -119,7 +119,7 @@ $(function(){
         //左右移动
         $('.promotion .content .out-box .inner-box').animate({
             'left': -index * 1175
-        },600)
+        },400)
     });
     /* 返回顶部 */
     //绑定滚动事件
@@ -138,5 +138,40 @@ $(function(){
             scrollTop:0
         },300)
     });
+    /* 二维码滑出效果 */
+    $('.qr-code .ticket').hover(function(){
+        //二维码滑出
+        $('.qr-code div').stop(true).animate({
+            left:'-100px'
+        })
+    },function(){
+        //二维码收回
+        $('.qr-code div').stop(true).animate({
+            left:'0px'
+        })
+    })
+    /* 顶部搜索框交互 */
+    $(document).scroll(function(){
+        var topDistance =$('html,body').scrollTop();
+        if (topDistance>500){
+            //如果滚动距离大于500 滑出
+            $('.top-search-box').slideDown();
+        }else{
+            //否则收回
+            $('.top-search-box').slideUp();
+        }
+    })
+    /* 楼层跳转 */
+    $('.floor li').click(function(){
+        //获取索引
+        var index = $(this).index();
+        //选中每一个板块到顶部的偏移
+        var topOffset = $('.floorBox').eq(index).offset().top
+        console.log(topOffset)
+        //让滚动条滚动到指定位置
+        $('html,body').animate({
+            scrollTop:topOffset-50
+        })
+    })
 })
 
