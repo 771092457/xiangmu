@@ -95,7 +95,7 @@
 .nav .search-shopcart-order .shopcart-order button:nth-child(1){
     background-color: #ff6700;
     color: #ffffff;
-    padding-left: 3px;
+    padding-left: 0px;
     background-repeat: no-repeat;
     background-position: -6px -44px;
 }
@@ -997,11 +997,12 @@
 }
 .footer .footer-top img{
     text-align: center;
-    padding-top: 10px;
-    margin-left: 190px;
+    padding-top: 12px;
+    margin-left: 250px;
     float: left;
 }
 .footer .footer-bottom{
+    text-align: center;
     height: 330px;
     background-color: #f3f3f3;
 }
@@ -1010,9 +1011,9 @@
     width: 150px;
 }
 .footer .footer-bottom ul {
-    width: 500px;
-    height: 150px;
-    margin-left: 550px;
+    width: 400px;
+    height: 170px;
+    margin-left: 700px;
 }
 .footer .footer-bottom ul li {
     float: left;
@@ -1020,7 +1021,7 @@
     margin-top: 25px;
     line-height: 30px;
 }
-/* 导航字体颜色 */
+/* 导航字体颜色大小 */
 .footer .footer-bottom ul li dl dt {
     font-size: 14px;
 }
@@ -1028,7 +1029,7 @@
 .footer .footer-bottom .footer-logo {
     width: 150px;
     height: 60px;
-    margin-left: 1000px;
+    margin-left: 1200px;
     margin-top: -100px;
 }
 /* 底部备案 */
@@ -1036,8 +1037,8 @@
     width: 600px;
     height: 60px;
     line-height: 20px;
-    margin-top: 120px;
-    margin-left: 450px;
+    margin-top: 100px;
+    margin-left: 600px;
 }
 footer {
     height: 430px;
