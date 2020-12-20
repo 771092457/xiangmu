@@ -29,4 +29,19 @@ $(function () {
         // 显示对应内容
         $('.ez-banner').eq(index).show().siblings().hide();
     })
+    // 换一批
+    // 定一个索引
+    // 上下滑动
+    var index = 0;
+    $('.change').click(function(){
+        // 自增
+        index++;
+        // 边界判断
+        index = index > 2 ? 0 : index;
+        // 让里面的 inner-box 运动
+        $('.inner-box').animate({
+            top: -index * 500
+        })
+    })
+    // 左右滑动
 })
